@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Playfair+Display:400,700i|Open+Sans:300,400');
+body{
+	margin: 0;
+	background-color: #333333;
+	color: white;
+	font-family: 'Montserrat';
+	padding: 0;
+	overflow-x: hidden;
+	font-size: 20px;
+	text-align: center;
+}
+.top{
+  font-size: 40px;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  width: 100
+  display: block;
+  margin: 0;
+}
+.header{
+  margin: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+	font-size: 40px;
+	width: 100vw;
+	font-family: 'Montserrat';
+	background-color: white;
+	color: black;
+	text-align: center;
+  box-shadow: 5px 0px 10px transparent;
+}
+.midbox{
+  margin: 0;
+  background-color: #1a1a1a;
+  color: white;
+  display: inline-block;
+  position: relative;
+  height: 300px;
+  text-align: center;
+  width: 100vw;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+.mid{
+  margin: 0;
+  width: 100%
+  height: 300px;
+  display: inline-block;
+  font-size: 40px;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  transition: font-size 0.5s;
+}
+.here{
+  font-size: 30px;
+  display: inline-block;
+  border: 2px solid #eaaee8;
+  color: #eaaee8;
+  padding: 5px 15px;
+  transition: all 0.5s;
+}
+.here:hover{
+  cursor: pointer;
+  background-color: #eaaee8;
+  color: #1a1a1a;
+}
+.quotebox{
+  background-color: #333333;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: -4px 0;
+  width: 100vw;
+  height: 750px;
+  color: white;
+  padding: 0;
+  
+}
+.quote{
+  width: 100%
+  height: 750px;
+  display: inline-block;
+  font-size: 70px;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  transition: font-size 0.5s;
+}
+.small{
+  font-size: 40px;
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-style: italic;
+  transition: font-size 0.5s;
+}
+#skills{
+  background-image: url("speechsmallgrey.jpg");
+  background-position: center bottom;
+  color: white;
+  background-size: cover;
+  
+}
+#tristan{
+
+  height: 350px;
+}
+#trevor{
+  height: 550px;
+}
+#colin{
+
+  height: 650px;
+}
+#nola{
+
+  height: 750px;
+}
+#alyssa{
+  height: 600px;
+}
+#bigd{
+  height: 700px;
+}
+#andrew{
+  height: 500px;
+}
+#connor{
+  height: 350px;
+  background-color: #1a1a1a;
+}
+#jayden{
+  height: 650px;
+}
+
+ul{
+	font-family: 'Montserrat';
+}
+a{
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+a:hover{
+  color: #eaaee8;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+    opacity: 0.5;
+}
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+#menuToggle{
+  display: block;
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 4;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0;
+  z-index: 5;
+  
+  -webkit-touch-callout: none;
+}
+#menuToggle span{
+  display: block;
+  width: 36px;
+  height: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: black;
+  
+  z-index: 4;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2){
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: black;
+}
+#menuToggle input:checked ~ span:nth-last-child(3){
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+  background: black;
+}
+#menuToggle input:checked ~ span:nth-last-child(2){
+  transform: rotate(-45deg) translate(0, -1px);
+  background: black;
+}
+#menu{
+
+  position: absolute;
+  z-index: 3;
+  width: 65px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  color: black;
+  font-size: 40px;
+  background: white;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul{
+  transform: none;
+  color: white;
+}
+.TM{
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  color: transparent;
+}
+@media screen and (max-width: 750px) {
+  .quote{
+    font-size: 50px;
+  }
+  .small{
+    font-size: 30px;
+  }
+  .mid {
+    font-size: 30px;
+  }
+  .here{
+    font-size: 20px;
+  }
+  .header{
+    color: transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+  .TM{
+    display: block;
+    color: black;
+  }
+}
+@media screen and (max-width: 400px) {
+  .quote{
+    font-size: 40px;
+  }
+  .mid{
+    font-size: 20px;
+  }
+}
+
+
+
+/*social-specific*/
+
+
+
+.soc{
+  background: #1a1a1a;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  height: 100vh;
+  
+}
+.socsub{
+  position: relative;
+  display: grid-item;
+  text-align: center;
+  padding-top: 60px;
+  height: auto;
+  overflow-y: scroll;
+}
+.socsub p{
+  height: 40px;
+  padding: 0px 5px;
+  color: white;
+}
+.socsub p:hover{
+  color: #eaaee8;
+}
+.tweet{
+  background-color: #333333;
+  padding: 20px;
+  margin: 20px;
+  font-family: 'Open Sans';
+  font-size: 17px;
+}
+.socsub .here{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.instapic{
+  display: inline-block;
+  width: 25vw;
+  height: 25vw;
+  margin-bottom: 20px;
+  background-size: cover;
+  border-radius: 10px;
+}
+#insta1{
+  background-image: url(insta1.JPG);
+}
+#insta2{
+  background-image: url(insta2.JPG);
+}
+#insta3{
+  background-image: url(insta3.JPG);
+}
+.twitpic{
+  border: 4px solid white;
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+}
+.twitpic:hover{
+  border: 4px solid #eaaee8;
+}
+@media screen and (max-width: 750px){
+  .tweet{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 600px){
+  .soc{
+    grid-template-columns: none;
+  }
+  .socsub{
+    text-align: center;
+    padding-left: 10px;
+    line-height: 100%;
+    overflow: hidden;
+    
+  }
+  .twitpic{
+    margin: 0px;
+  }
+  .tweet{
+    display: none;
+  }
+  .socsub p{
+    margin: 10px;
+  }
+}
+
+
+
+/*projects-specific*/
+
+
+.projbox{
+  text-align: left;
+  float: left;
+  width: 100%
+  height: 450px;
+  font-family: 'Open Sans';
+  margin: 20px;
+  margin-top: 5px;
+}
+.projbox p{
+  float: left;
+  width: 45%;
+  font-size: 30px;
+  transition: all 0.5s;
+  margin-top: 0;
+}
+.proj{
+  display: block;
+  float: right;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+h1{
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 70px;
+  text-align: left;
+  margin-bottom: 0;
+  margin-left: 20px;
+  transition: all 0.5s;
+}
+#decades{
+  background-image: url('decades.png');
+/*  width: 1728px;
+  height: 1296px; */
+  width: 50vw;
+  height: 33vw;
+}
+
+#copilots{
+  background-image: url('21copilots.png');
+/*  width: 1000px;
+  height: 1000px; */
+  width: 40vw;
+  height: 40vw;
+}
+#hope{
+  background-image: url('hope.PNG');
+/*  width: 612px;
+  height: 795px; */
+  width: 34vw;
+  height: 44vw;
+}
+@media screen and (max-width: 750px){
+  .projbox p{
+    font-size: 20px;
+  }
+  h1{
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 400px){
+  h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  .projbox{
+    text-align: center;
+    float: none;
+  }
+  .proj{
+    display: inline-block;
+    float: none;
+  }
+  .projbox p{
+    display: none;
+  }
+  #newlearning{
+    display: none;
+  }
+}
+
+
+/*faq-specific*/
+
+
+
+.faq{
+  font-size: 50px;
+  
+}
+.qna{
+  display: inline-block;
+  width: 40%;
+  transition: all 0.5s;
+}
+.q{
+  text-align: left;
+}
+.a{
+  font-family: 'Open Sans';
+  text-align: right;
+}
+#shortfaq{
+  display: none;
+}
+@media screen and (max-width: 600px){
+  .qna{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px){
+  #longfaq{
+    display: none;
+  }
+  #shortfaq{
+    display: block;
+  }
+}
